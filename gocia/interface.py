@@ -903,7 +903,7 @@ class Interface:
             tmpInterfc,
             myElem,
             zLim = self.zLim,
-            tolerance = tolerance
+            toler = tolerance
         )
         self.set_allAtoms(tmpInterfc.get_allAtoms())
 
