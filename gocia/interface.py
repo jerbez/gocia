@@ -910,7 +910,7 @@ class Interface:
                 print(self.get_fragNames()[myDel])
                 self.remove_adsFrag(fragList[myDel])
 
-    def growMut(self, elemList):
+    def growMut(self, elemList, tolerance = 0.5):
         print(' |- Growth mutation:', end = '\t')
         from gocia.geom.build import grow_adatom
         tmpInterfc = self.copy()
@@ -923,6 +923,7 @@ class Interface:
             tmpInterfc,
             myElem,
             zLim = self.zLim,
+            toler = tolerance
         )
         self.set_allAtoms(tmpInterfc.get_allAtoms())
 
