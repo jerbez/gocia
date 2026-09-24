@@ -1,5 +1,5 @@
-from gocia_new.interface import Interface
-from gocia_new.geom import build 
+from gocia.interface import Interface
+from gocia.geom import build 
 from ase.io import read,write
 from ase import Atoms
 

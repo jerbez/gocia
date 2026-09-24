@@ -1,6 +1,6 @@
 from ase.io import read
 from ase.db import connect
-from gocia_new.interface import Interface
+from gocia.interface import Interface
 
 subAtoms = read('sub-POSCAR')
 
